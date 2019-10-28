@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin_Calculadora.Android", "Xamarin_Calculadora\Xamarin_Calculadora.Android\Xamarin_Calculadora.Android.csproj", "{CC433707-A012-4B03-A8D1-411E470E13EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin_Calculadora", "Xamarin_Calculadora\Xamarin_Calculadora\Xamarin_Calculadora.csproj", "{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC433707-A012-4B03-A8D1-411E470E13EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC433707-A012-4B03-A8D1-411E470E13EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC433707-A012-4B03-A8D1-411E470E13EC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CC433707-A012-4B03-A8D1-411E470E13EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC433707-A012-4B03-A8D1-411E470E13EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC433707-A012-4B03-A8D1-411E470E13EC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52605404-7669-4CFB-A6CE-7A6E3FE7D8F7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E196EB40-E770-4814-8CE5-E52F6CE678C4}
+	EndGlobalSection
+EndGlobal
