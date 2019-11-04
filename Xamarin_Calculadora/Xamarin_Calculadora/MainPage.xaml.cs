@@ -14,7 +14,7 @@ namespace Xamarin_Calculadora
     public partial class MainPage : ContentPage
     {
         int currentSatate = 1;
-        String Operção;
+        String Operação;
         double primeiro_numero, segundo_numero;
 
         public MainPage()
@@ -31,7 +31,7 @@ namespace Xamarin_Calculadora
             this.txtResultado.Text = "0";
         }
 
-        void selecionar_numero(object sender, EventArgs e)
+       private void selecionar_numero(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             string pressionar = button.Text;
@@ -42,6 +42,62 @@ namespace Xamarin_Calculadora
                 if (currentSatate < 0)
                     currentSatate *= -1;
 
+            }
+            this.txtResultado.Text += pressionar;
+
+            double numero;
+
+            if (double.TryParse(this.txtResultado.Text, out numero))
+            {
+                // O número que aparece na tela resultado, já vem formatado com ponto e virgula.
+                this.txtResultado.Text = numero.ToString("N0");
+                if (currentSatate == 1)
+                {
+                    primeiro_numero = numero;
+                }
+                else
+                {
+                    segundo_numero = numero;
+                }
+            }
+        }
+
+        //Após selecionar a operação ele armazena o valor no segundo número.
+        private void selecionar_operacao(object sendre, EventArgs e)
+        {
+            currentSatate = -2;
+            Button button = (Button)sendre;
+            string pressionar = button.Text;
+            Operação = pressionar;
+        }
+
+        private void Calcular(object sendre, EventArgs e)
+        {
+            if(currentSatate == 2)
+            {
+                double resultado = 0;
+                
+                if(Operação == "+")
+                {
+                    resultado = primeiro_numero + segundo_numero;
+                }
+                if (Operação == "-")
+                {
+                    resultado = primeiro_numero - segundo_numero;
+                }
+                if (Operação == "*")
+                {
+                    resultado = primeiro_numero * segundo_numero;
+                }
+                if (Operação == "/")
+                {
+                    resultado = primeiro_numero / segundo_numero;
+                }
+
+                
+                this.txtResultado.Text = resultado.ToString("N0");
+                primeiro_numero = resultado;
+                currentSatate = -1;
             }
         }
 
